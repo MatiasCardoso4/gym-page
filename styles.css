@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 35px  0 35px ;
+    padding: 20px 35px 0 35px;
 }
 
 header a {
@@ -47,12 +47,15 @@ header a {
 .membresias-section {
     background-image: url('./assets/hero-background.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     height: 40vh;
     text-align: center;
     color: white;
-    box-shadow: inset 0 80px 30px  rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 80px 30px rgba(0, 0, 0, 0.8);
+}
+
+.membresias-section:hover, .sedes-section:hover,.entrenamientos-section:hover {
+    animation: zoomImage  1s ease-out both;
 }
 
 .membresias-section h2 {
@@ -64,11 +67,14 @@ header a {
     font-size: 1.5rem;
 }
 
-.membresias-section,.sedes-section,.entrenamientos-section:hover {
+.membresias-section,
+.sedes-section,
+.entrenamientos-section:hover {
     cursor: pointer;
 }
 
-.sedes-section, .entrenamientos-section {
+.sedes-section,
+.entrenamientos-section {
     background-color: red;
     padding: 1.8rem;
 }
@@ -77,22 +83,28 @@ header a {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    box-shadow: inset 0 -80px 30px  rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 -80px 30px rgba(0, 0, 0, 0.6);
+    background-image: url('./assets/gym-indoor.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .entrenamientos-section {
     text-align: end;
-    box-shadow: inset 0 80px 30px  rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 80px 30px rgba(0, 0, 0, 0.6);
+    background-image: url('./assets/woman.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-.sedes-section h2 ,
+.sedes-section h2,
 .entrenamientos-section h2 {
     font-size: 2.5rem;
-    font-weight:900;
+    font-weight: 900;
     color: whitesmoke;
 }
 
-.sedes-section p ,
+.sedes-section p,
 .entrenamientos-section p {
     font-size: 1.5rem;
     color: whitesmoke;
@@ -114,9 +126,10 @@ footer {
     justify-content: space-between;
 }
 
-footer h2 {
-    font-size: 2.5rem;
+footer a {
+    text-decoration: none;
     color: whitesmoke;
+    cursor: pointer;
 }
 
 footer li {
@@ -140,5 +153,19 @@ footer .social-media-icon-container {
 
 footer .icon {
     width: 20px;
+}
+
+
+
+@keyframes zoomImage {
+    0%{
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 110%;
+    }
+
+   
 }
 
