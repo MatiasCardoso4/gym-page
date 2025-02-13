@@ -26,7 +26,7 @@ header {
 
 .nav-bar {
     display: flex;
-  padding-right: 2rem;
+    padding-right: 2rem;
 }
 
 .menu-toggle {
@@ -103,7 +103,7 @@ header {
 .entrenamientos-section {
     padding: 1.8rem;
     width: 100%;
-   
+
 }
 
 .sedes-section {
@@ -150,12 +150,13 @@ footer {
     height: 27vh;
     width: 100%;
     background-color: rgb(66, 63, 63);
-    padding: 30px 35px;
+    padding: 30px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 0.9rem;
     margin-top: 1rem;
 }
+
 footer li {
     list-style: none;
     color: white;
@@ -186,7 +187,7 @@ footer .icon:hover {
 .fixed-whatsapp-logo {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     width: 3vw;
     cursor: pointer;
 }
@@ -204,17 +205,19 @@ footer .icon:hover {
 
 }
 
-/*Responsive*/
+/*Mobile*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 640px) {
 
     /* Adjust Header */
     header {
         padding: 0 15px;
+        justify-content: space-between;
     }
 
     /* Navigation Bar */
     .nav-bar {
+        padding: 0;
         position: relative;
     }
 
@@ -254,18 +257,83 @@ footer .icon:hover {
 
     /* main content */
 
-    .wrapper{
+    .wrapper {
         flex-direction: column;
         justify-content: start;
+        height: auto;
     }
 
 
     footer {
         flex-direction: column;
         height: auto;
+
     }
 
     .fixed-whatsapp-logo {
-       width: 10vw;
+        width: 10vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+.wrapper {
+    flex-direction: column;
+    height: auto;
+}
+
+.social-media-icon-container{
+    flex-wrap: wrap;
+}
+
+footer {
+    font-size: 12px;
+    gap: 20px;
+}
+
+.fixed-whatsapp-logo {
+    width: 40px;
+}
+}
+
+@media screen and (max-width: 1024px){
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .social-media-icon-container{
+        flex-wrap: wrap;
+    }
+    
+    footer {
+        font-size: 12px;
+        gap: 30px;
+    }
+    
+    .fixed-whatsapp-logo {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .social-media-icon-container{
+        flex-wrap: wrap;
+    }
+    
+    footer {
+        font-size: 12px;
+        gap: 30px;
+    }
+    
+    .fixed-whatsapp-logo {
+        width: 50px;
     }
 }
