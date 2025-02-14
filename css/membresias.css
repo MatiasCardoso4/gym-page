@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.first-section {
+  background-color: black;
+  color: whitesmoke;
+  height: 18vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.title-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  align-self: center;
+}
+
+.divisor {
+  width: 97vw;
+  height: 2px;
+  background-color: whitesmoke;
+
+}
+
+.asociate {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 62px;
+}
+
+.section-info h2 {
+  margin-bottom: 12px;
+}
+
+.section-info p {
+  width: 30vw;
+}
+
+.asociate button {
+  border: 2px solid whitesmoke;
+  border-radius: 16px;
+  color: whitesmoke;
+  background-color: inherit;
+  padding: 20px 55px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.asociate button:hover {
+  background-color: whitesmoke;
+  color: #000000;
+}
+
+
+.second-section {
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  padding: 10px 0;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px ;
+  width: 100%;
+}
+
+.text-container .text {
+  width:18vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container .text p {
+  line-height: 22px;
+}
+
+.text-container button {
+  border: 2px solid #000000;
+  border-radius: 16px;
+  color: #000000;
+  background-color: inherit;
+  padding: 20px 55px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-container button:hover {
+  background-color: #000000;
+  color: whitesmoke;
+}
+
+.image-container img{
+  width: 50vw;
+  height: 40vh;
+  object-fit: cover;
+  display: block;
+}
