@@ -152,8 +152,6 @@ footer .icon:hover {
 
 @media screen and (max-width: 640px) {
 
-   
-
     /* main content */
 
     .wrapper {
@@ -163,15 +161,6 @@ footer .icon:hover {
     }
 
 
-    footer {
-        flex-direction: column;
-        height: auto;
-
-    }
-
-    .fixed-whatsapp-logo {
-        width: 10vw;
-    }
 }
 
 @media screen and (max-width: 768px) {

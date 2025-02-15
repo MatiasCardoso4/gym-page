@@ -8,7 +8,7 @@
 .first-section {
   background-color: black;
   color: whitesmoke;
-  height: 18vw;
+  height: 20vw;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -18,7 +18,7 @@
 
 .title-container {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -38,12 +38,13 @@
 
 .asociate {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 62px;
+  padding: 0 40px;
   letter-spacing: 2px;
+
 }
 
 .section-info h2 {
@@ -52,6 +53,8 @@
 
 .section-info p {
   width: 30vw;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .asociate button {
@@ -70,25 +73,23 @@
 }
 
 
-.second-section {
+.black-section {
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   padding: 0.8rem;
-  height: 18vw;
+  height: 20vw;
 }
 
-.text-container {
+.black-section-text-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 50px;
-  width: 100%;
   height: 100%;
-
 }
 
-.text-container .text {
+.black-section-text-container .text {
   width: 100%;
   height: 100%;
   display: flex;
@@ -96,17 +97,19 @@
   justify-content: flex-start;
 }
 
-.text-container .text h3{
+.black-section-text-container .text h3,.platinum-section-text-container .text h3{
   margin-bottom: 30px;
 }
 
-.text-container .text p {
+.black-section-text-container .text p {
   width: 76%;
   letter-spacing: 1px;
+  font-weight: 600;
   line-height: 26px;
+  font-size: 14px;
 }
 
-.text-container button {
+.black-section-text-container button {
   border: 2px solid #000000;
   border-radius: 16px;
   color: #000000;
@@ -119,14 +122,14 @@
  
 }
 
-.text-container button:hover {
+.black-section-text-container button:hover {
   background-color: #000000;
   color: whitesmoke;
 }
 
 .image-container img {
   width: 48.3vw;
-  height: 17vw;
+  height: 18vw;
   object-fit: cover;
   display: block;
 }
@@ -136,13 +139,32 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  height: 18vw;
+  gap: 35px;
+  height: 20vw;
+  width: 100%;
   color: whitesmoke;
   padding: 0.8rem;
 }
 
-.platinum-section .text-container {}
 
+.platinum-section-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.platinum-section-text-container .text{
+  margin-bottom: 33px;
+}
+
+.platinum-section-text-container .text p {
+  width: 70%;
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-size: 14px;
+}
 
 
 /*Mobile */
@@ -171,42 +193,46 @@
   .section-info p {
     width: 100%;
     margin-bottom: 1rem;
+    line-height: 22px;
+    font-weight: normal;
   }
 
-  .second-section {
+  .black-section {
     height: auto;
     flex-direction: column-reverse;
     padding: 0;
   }
 
-  .second-section img {
+  .black-section img {
     height: auto;
     width: 100%;
   }
 
-  .text-container {
+  .black-section-text-container {
     flex-direction: column;
     text-align: center;
     margin-top: 1rem;
     padding: 0;
   }
 
-  .text-container .text h3 {
+  .black-section-text-container .text h3 {
     margin-bottom: 1rem;
   }
 
-  .text-container .text p {
+  .black-section-text-container .text p {
     width: 100%;
     margin-bottom: 20px;
     padding: 0 1rem;
   }
 
-  .text-container button {
+  .black-section-text-container button {
     margin-bottom: 1rem;
   }
 
-  .text-container button,
+  .black-section-text-container button,
   .asociate button {
     width: 80%;
   }
+
+
 }

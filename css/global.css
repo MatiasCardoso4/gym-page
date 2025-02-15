@@ -16,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
 }
 
 .logo {
@@ -25,7 +26,6 @@ header {
 
 .nav-bar {
   display: flex;
-  padding-right: 2rem;
 }
 
 .menu-toggle {
@@ -45,11 +45,12 @@ header {
   text-decoration: none;
   color: #000;
   cursor: pointer;
+  margin-right: 6px;
 }
 
 
 .nav-links a:hover {
-  background-color: rgb(185, 185, 224);
+  background-color: rgb(215, 215, 219);
   padding: 0.3rem 1rem;
   border-radius: 8px;
 }
@@ -67,12 +68,13 @@ header {
   /* Adjust Header */
   header {
       justify-content: space-between;
-      padding-right: 15px;
+      padding: 0;
+      padding-right: 1rem;
+      
   }
 
   /* Navigation Bar */
   .nav-bar {
-      padding: 0;
       position: relative;
   }
 
@@ -109,5 +111,22 @@ header {
   .nav-links a {
       color: #000;
       display: block;
+      margin-right: 0;
+  }
+
+  
+  footer {
+    flex-direction: column;
+    height: auto;
+
+}
+
+.terms-conditions-container ul li:last-child {
+  width: 80%;
+}
+
+.fixed-whatsapp-logo {
+    width: 12vw;
+    bottom: 40px;
   }
 }
