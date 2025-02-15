@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 
@@ -42,6 +43,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 62px;
+  letter-spacing: 2px;
 }
 
 .section-info h2 {
@@ -69,9 +71,11 @@
 
 
 .second-section {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(219, 219, 219);
   display: flex;
-  padding: 10px 0;
+  align-items: center;
+  padding: 0.8rem;
+  height: 18vw;
 }
 
 .text-container {
@@ -83,13 +87,20 @@
 }
 
 .text-container .text {
-  width:18vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.text-container .text h3{
+  margin-bottom: 30px;
 }
 
 .text-container .text p {
-  line-height: 22px;
+  width: 76%;
+  letter-spacing: 1px;
+  line-height: 26px;
 }
 
 .text-container button {
@@ -97,9 +108,11 @@
   border-radius: 16px;
   color: #000000;
   background-color: inherit;
-  padding: 20px 55px;
+  padding: 20px;
+  width: 30%;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 12px;
 }
 
 .text-container button:hover {
@@ -107,9 +120,88 @@
   color: whitesmoke;
 }
 
-.image-container img{
-  width: 50vw;
-  height: 40vh;
+.image-container img {
+  width: 48.3vw;
+  height: 17vw;
   object-fit: cover;
   display: block;
+}
+
+.platinum-section {
+  background-color: rgb(125, 125, 125);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 18vw;
+  color: whitesmoke;
+  padding: 0.8rem;
+}
+
+.platinum-section .text-container {}
+
+
+
+/*Mobile */
+
+@media screen and (max-width: 640px) {
+
+  .first-section {
+    height: auto;
+    text-align: center;
+  }
+
+  .title-container {
+    height: 18vh;
+  }
+
+  .title-container h1 {
+    font-size: 2rem;
+  }
+
+  .asociate {
+    padding: 0;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .section-info p {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .second-section {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .second-section img {
+    height: auto;
+    width: 100%;
+  }
+
+  .text-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .text-container .text h3 {
+    margin-bottom: 1rem;
+  }
+
+  .text-container .text p {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 1rem;
+  }
+
+  .text-container button {
+    margin-bottom: 1rem;
+  }
+
+  .text-container button,
+  .asociate button {
+    width: 80%;
+  }
 }

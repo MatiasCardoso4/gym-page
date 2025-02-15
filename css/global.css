@@ -10,7 +10,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
 }
 
 header {
@@ -59,4 +58,56 @@ header {
   background-color: rgb(254, 82, 3);
   color: #ffffff;
   border-radius: 8px;
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+  /* Adjust Header */
+  header {
+      justify-content: space-between;
+      padding-right: 15px;
+  }
+
+  /* Navigation Bar */
+  .nav-bar {
+      padding: 0;
+      position: relative;
+  }
+
+  /* Menu Icon (Hamburger) */
+  .menu-toggle {
+      display: block;
+      font-size: 2rem;
+      cursor: pointer;
+  }
+
+  /* Navigation Links (Hidden by Default) */
+  .nav-links {
+      display: none;
+      position: absolute;
+      top: 63px;
+      right: -15px;
+      height: 20vh;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* Active State (When Menu is Open) */
+  .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(252, 250, 250);
+      padding: 15px;
+      width: max-content;
+  }
+
+  /* Navigation Links Styling */
+  .nav-links a {
+      color: #000;
+      display: block;
+  }
 }

@@ -152,51 +152,7 @@ footer .icon:hover {
 
 @media screen and (max-width: 640px) {
 
-    /* Adjust Header */
-    header {
-        padding: 0 15px;
-        justify-content: space-between;
-    }
-
-    /* Navigation Bar */
-    .nav-bar {
-        padding: 0;
-        position: relative;
-    }
-
-    /* Menu Icon (Hamburger) */
-    .menu-toggle {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    /* Navigation Links (Hidden by Default) */
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Active State (When Menu is Open) */
-    .nav-links.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(206, 206, 206, 0.85);
-        padding: 15px;
-        border-radius: 8px;
-        width: max-content;
-    }
-
-    /* Navigation Links Styling */
-    .nav-links a {
-        color: #000;
-        display: block;
-    }
+   
 
     /* main content */
 
