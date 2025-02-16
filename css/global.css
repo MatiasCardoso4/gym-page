@@ -301,33 +301,36 @@ footer .icon:hover {
 
 }
 
-@media screen and (min-width: 1200px){
-
-  .logo {
-    width: 150px;
-  }
+@media screen and (min-width: 1200px) {
 
   .nav-bar a {
     font-size: 1.7rem;
   }
 
   footer {
-    padding: 2rem ;
+    padding: 2rem;
     align-items: center;
   }
 
-  .social-media-icon-container img {
-    width: 40px;
-  }
 
   footer li {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .fixed-whatsapp-logo {
     bottom: 50px;
     right: 50px;
-    width: 75px;
+  }
+
+}
+
+@media screen and (min-width: 2560px) {
+  .logo {
+    width: 150px;
+  }
+
+  footer li {
+    font-size: 1.5rem;
   }
 
 }
