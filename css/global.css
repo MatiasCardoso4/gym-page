@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -16,7 +16,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -45,6 +48,7 @@ header {
   text-decoration: none;
   color: #000;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 
@@ -60,15 +64,16 @@ header {
   border-radius: 8px;
 }
 
-
 footer {
-  height: 27vh;
+  height: 100%;
   width: 100%;
   background-color: rgb(66, 63, 63);
-  padding: 30px 20px;
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 0.9rem;
+  position: relative;
+  z-index: -1;
 }
 
 footer li {
@@ -76,6 +81,10 @@ footer li {
   color: white;
   line-height: 32px;
   cursor: pointer;
+}
+
+footer .contact-container ul:first-child {
+  text-align: center;
 }
 
 footer li:hover {
@@ -107,16 +116,13 @@ footer .icon:hover {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
 
-  /* Adjust Header */
   header {
-    justify-content: space-between;
-    padding: 0;
+    padding-left: 0;
     padding-right: 1rem;
   }
 
-  /* Navigation Bar */
   .nav-bar {
     position: relative;
   }
@@ -133,7 +139,8 @@ footer .icon:hover {
     display: none;
     position: absolute;
     top: 63px;
-    right: -15px;
+    right: -16px;
+    padding: 1rem;
     height: 20vh;
     width: 100%;
     text-align: center;
@@ -145,8 +152,7 @@ footer .icon:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(252, 250, 250);
-    padding: 15px;
+    background-color: rgb(230, 229, 229);
     width: max-content;
   }
 
@@ -161,12 +167,8 @@ footer .icon:hover {
     flex-direction: column;
     height: auto;
     margin-top: 0;
-    gap: 30px;
     padding: 1rem;
-  }
-
-  footer li {
-    font-size: 1rem;
+    gap: 2rem;
   }
 
   .terms-conditions-container ul li:last-child {
@@ -174,58 +176,158 @@ footer .icon:hover {
   }
 
   .fixed-whatsapp-logo {
-    width: 12vw;
-    bottom: 40px;
+    width: 35px;
+    bottom: 60px;
+  }
+
+
+  footer .contact-container ul:first-child {
+    text-align: left;
   }
 }
 
-
-@media screen and (max-width: 768px) {
-
-  .social-media {
-    align-items: center;
-    width: 50%;
-
+@media screen and (min-width: 600px) {
+  header {
+    padding-left: 0;
+    padding-right: 1rem;
   }
 
-  .social-media-icon-container {
-    flex-wrap: wrap;
-    
+  .nav-bar {
+    position: relative;
+  }
+
+  /* Menu Icon (Hamburger) */
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Navigation Links (Hidden by Default) */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 63px;
+    right: -16px;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Active State (When Menu is Open) */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(230, 229, 229);
+    padding: 15px;
+    width: max-content;
+  }
+
+  /* Navigation Links Styling */
+  .nav-links a {
+    color: #000;
+    margin-right: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .terms-conditions-container ul li:last-child {
+    width: 80%;
+  }
+
+  .fixed-whatsapp-logo {
+    width: 35px;
+  }
+
+  footer .contact-container ul:first-child {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Adjust Header */
+
+  header {
+    justify-content: space-between;
+    padding: 0;
+    padding-right: 1rem;
+  }
+
+  footer {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
   }
 
   footer li {
     font-size: 1rem;
   }
 
+  footer .contact-container ul:first-child {
+    text-align: left;
+  }
+
   .fixed-whatsapp-logo {
     width: 40px;
+    bottom: 150px;
   }
 }
 
-
-@media screen and (max-width: 1024px) {
-  header {
-    padding: 0 1rem 0 0;
-}
-
-
-  .container {
-    gap: 0;
+@media screen and (min-width: 992px) {
+  .menu-toggle {
+    display: none;
   }
 
-  .social-media-icon-container {
-    flex-wrap: wrap;
+  .nav-links {
+    display: flex;
+    position: static;
+    height: auto;
   }
 
   footer {
-    height: auto;
-    font-size: 1rem;
-    gap: 30px;
-    padding: 1rem;
-    margin-top: 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .logo {
+    width: 150px;
+  }
+
+  .nav-bar a {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    padding: 2rem ;
+    align-items: center;
+  }
+
+  .social-media-icon-container img {
+    width: 40px;
+  }
+
+  footer li {
+    font-size: 1.5rem;
   }
 
   .fixed-whatsapp-logo {
-    width: 50px;
+    bottom: 50px;
+    right: 50px;
+    width: 75px;
   }
+
 }

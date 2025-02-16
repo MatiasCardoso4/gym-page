@@ -197,7 +197,13 @@
 
 /*Mobile */
 
-@media screen and (max-width: 640px) {
+@media screen and (min-width: 640px) {
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 
   .first-section {
     height: auto;
@@ -394,7 +400,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1280px) {
 
   .first-section,
   .black-section,
