@@ -97,7 +97,8 @@
   justify-content: flex-start;
 }
 
-.black-section-text-container .text h3,.platinum-section-text-container .text h3{
+.black-section-text-container .text h3,
+.platinum-section-text-container .text h3 {
   margin-bottom: 30px;
 }
 
@@ -131,11 +132,10 @@
   height: 100%;
 }
 
-.image-container img {
+.hero-image {
   width: 48.3vw;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .platinum-section {
@@ -161,7 +161,7 @@
 }
 
 
-.platinum-section-text-container .text{
+.platinum-section-text-container .text {
   width: 100%;
   height: 100%;
   display: flex;
@@ -169,7 +169,7 @@
   justify-content: flex-start;
 }
 
-.platinum-section-text-container  button {
+.platinum-section-text-container button {
   border: 2px solid #fff;
   border-radius: 16px;
   color: #fff;
@@ -181,7 +181,7 @@
   margin-bottom: 155px;
 }
 
-.platinum-section-text-container  button:hover {
+.platinum-section-text-container button:hover {
   background-color: #fff;
   color: #000000;
 }
@@ -232,11 +232,6 @@
     padding: 0;
   }
 
-  .black-section img {
-    height: auto;
-    width: 100%;
-  }
-
   .black-section-text-container {
     flex-direction: column;
     text-align: center;
@@ -244,7 +239,7 @@
   }
 
   .black-section-text-container .text h3,
-  .platinum-section-text-container .text h3{
+  .platinum-section-text-container .text h3 {
     margin-bottom: 1rem;
   }
 
@@ -256,12 +251,12 @@
 
   .asociate button,
   .black-section-text-container button,
-  .platinum-section-text-container  button {
+  .platinum-section-text-container button {
     width: 80%;
   }
 
   .black-section-text-container button,
-  .platinum-section-text-container  button {
+  .platinum-section-text-container button {
     margin: 0;
   }
 
@@ -273,25 +268,219 @@
     gap: 0;
   }
 
-  .platinum-section img {
-    width: 100%;
-  }
-
   .platinum-section-text-container {
     flex-direction: column;
     width: 100%;
-    text-align: center;
-    padding:  1rem;
+    padding: 1rem;
+  }
+
+  .platinum-section-text-container .text {
+    align-items: center;
   }
 
   .platinum-section-text-container .text p {
     width: 100%;
     margin-bottom: 1rem;
+  }
+}
 
+@media screen and (max-width: 768px) {
+
+  .first-section,
+  .black-section,
+  .platinum-section {
+    height: auto;
+  }
+
+  .title-container {
+    height: 12vh;
+  }
+
+  .asociate {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .section-info p {
+    width: 100%;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+
+  .black-section,
+  .platinum-section {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .black-section-text-container,
+  .platinum-section-text-container {
+    padding: 1rem;
+  }
+
+  .black-section-text-container .text {
+    padding: 0.5rem;
+  }
+
+  .black-section-text-container .text p {
+    width: 90%;
+  }
+
+  .black-section button,
+  .platinum-section button {
+    margin-bottom: 0;
+  }
+
+  .platinum-section {
+    gap: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .first-section,
+  .black-section,
+  .platinum-section {
+    height: auto;
+  }
+
+  .title-container {
+    height: 12vh;
+  }
+
+  .asociate {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .section-info p {
+    width: 100%;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+
+  .black-section,
+  .platinum-section {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .black-section-text-container,
+  .platinum-section-text-container {
+    padding: 1rem;
+    
+  }
+
+  .black-section-text-container .text {
+    padding: 0.5rem;
+  }
+
+  .black-section-text-container .text p,
+  .platinum-section-text-container .text p {
+    width: 90%;
+    letter-spacing: 2px;
+  }
+
+  .platinum-section {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+
+  .first-section,
+  .black-section,
+  .platinum-section {
+    height: auto;
+  }
+
+  .title-container {
+    height: 12vh;
+  }
+
+  .asociate {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .section-info p {
+    width: 100%;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+
+  .black-section,
+  .platinum-section {
+    flex-direction: column-reverse;
+    padding: 0;
+   
+  }
+
+  .black-section-text-container,
+  .platinum-section-text-container {
+    padding: 1rem;
+    height: 30vh;
+  }
+
+  .black-section-text-container .text {
+    padding: 0.5rem;
+  }
+
+  .black-section-text-container .text p {
+    width: 90%;
+  }
+
+  .black-section img, .platinum-section img {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .black-section button,
+  .platinum-section button {
+    margin: 0;
+  }
+
+  .platinum-section {
+    gap: 0;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .black-section-text-container .text p,
+  .platinum-section-text-container .text p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .platinum-section-text-container .text p {
+    width: 90%;
+  }
+
+  .social-media-icon-container {
+    flex-wrap: wrap;
   }
 
   footer {
-    margin-top: 0;
+    font-size: 12px;
+    gap: 30px;
   }
-  
+
+  .fixed-whatsapp-logo {
+    width: 50px;
+  }
 }

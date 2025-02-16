@@ -45,7 +45,6 @@ header {
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  margin-right: 6px;
 }
 
 
@@ -70,7 +69,6 @@ footer {
   display: flex;
   justify-content: space-around;
   font-size: 0.9rem;
-  margin-top: 1rem;
 }
 
 footer li {
@@ -113,72 +111,121 @@ footer .icon:hover {
 
   /* Adjust Header */
   header {
-      justify-content: space-between;
-      padding: 0;
-      padding-right: 1rem;
+    justify-content: space-between;
+    padding: 0;
+    padding-right: 1rem;
   }
-
-
 
   /* Navigation Bar */
   .nav-bar {
-      position: relative;
+    position: relative;
   }
 
   /* Menu Icon (Hamburger) */
   .menu-toggle {
-      display: block;
-      font-size: 2rem;
-      cursor: pointer;
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
   }
 
   /* Navigation Links (Hidden by Default) */
   .nav-links {
-      display: none;
-      position: absolute;
-      top: 63px;
-      right: -15px;
-      height: 20vh;
-      width: 100%;
-      text-align: center;
+    display: none;
+    position: absolute;
+    top: 63px;
+    right: -15px;
+    height: 20vh;
+    width: 100%;
+    text-align: center;
   }
 
   /* Active State (When Menu is Open) */
   .nav-links.active {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      background-color: rgb(252, 250, 250);
-      padding: 15px;
-      width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(252, 250, 250);
+    padding: 15px;
+    width: max-content;
   }
 
   /* Navigation Links Styling */
   .nav-links a {
-      color: #000;
-      display: block;
-      margin-right: 0;
+    color: #000;
+    display: block;
+    margin-right: 0;
   }
 
-
-  .wrapper {
-    gap: 0;
-  }
-  
   footer {
     flex-direction: column;
     height: auto;
     margin-top: 0;
     gap: 30px;
-}
+    padding: 1rem;
+  }
 
-.terms-conditions-container ul li:last-child {
-  width: 80%;
-}
+  footer li {
+    font-size: 1rem;
+  }
 
-.fixed-whatsapp-logo {
+  .terms-conditions-container ul li:last-child {
+    width: 80%;
+  }
+
+  .fixed-whatsapp-logo {
     width: 12vw;
     bottom: 40px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .social-media {
+    align-items: center;
+    width: 50%;
+
+  }
+
+  .social-media-icon-container {
+    flex-wrap: wrap;
+    
+  }
+
+  footer li {
+    font-size: 1rem;
+  }
+
+  .fixed-whatsapp-logo {
+    width: 40px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 0 1rem 0 0;
+}
+
+
+  .container {
+    gap: 0;
+  }
+
+  .social-media-icon-container {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    height: auto;
+    font-size: 1rem;
+    gap: 30px;
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .fixed-whatsapp-logo {
+    width: 50px;
   }
 }
