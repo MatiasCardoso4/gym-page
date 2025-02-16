@@ -77,7 +77,7 @@
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
-  padding: 0.8rem;
+  padding: 0.7rem;
   height: 20vw;
 }
 
@@ -118,8 +118,7 @@
   width: 25%;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 119px;
- 
+  margin-bottom: 155px;
 }
 
 .black-section-text-container button:hover {
@@ -127,9 +126,14 @@
   color: whitesmoke;
 }
 
+
+.image-container {
+  height: 100%;
+}
+
 .image-container img {
   width: 48.3vw;
-  height: 18vw;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -138,12 +142,11 @@
   background-color: rgb(125, 125, 125);
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
   gap: 35px;
   height: 20vw;
   width: 100%;
   color: whitesmoke;
-  padding: 0.8rem;
+  padding: 0.7rem;
 }
 
 
@@ -152,11 +155,35 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
+  padding: 20px 0;
+  padding-right: 2rem;
 }
 
 
 .platinum-section-text-container .text{
-  margin-bottom: 33px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.platinum-section-text-container  button {
+  border: 2px solid #fff;
+  border-radius: 16px;
+  color: #fff;
+  background-color: inherit;
+  padding: 20px;
+  width: 25%;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 155px;
+}
+
+.platinum-section-text-container  button:hover {
+  background-color: #fff;
+  color: #000000;
 }
 
 .platinum-section-text-container .text p {
@@ -165,6 +192,7 @@
   line-height: 22px;
   font-size: 14px;
 }
+
 
 
 /*Mobile */
@@ -187,12 +215,13 @@
   .asociate {
     padding: 0;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .section-info p {
     width: 100%;
     margin-bottom: 1rem;
+    letter-spacing: 2px;
     line-height: 22px;
     font-weight: normal;
   }
@@ -211,28 +240,58 @@
   .black-section-text-container {
     flex-direction: column;
     text-align: center;
-    margin-top: 1rem;
-    padding: 0;
+    padding: 1rem;
   }
 
-  .black-section-text-container .text h3 {
+  .black-section-text-container .text h3,
+  .platinum-section-text-container .text h3{
     margin-bottom: 1rem;
   }
 
   .black-section-text-container .text p {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     padding: 0 1rem;
   }
 
-  .black-section-text-container button {
-    margin-bottom: 1rem;
-  }
-
+  .asociate button,
   .black-section-text-container button,
-  .asociate button {
+  .platinum-section-text-container  button {
     width: 80%;
   }
 
+  .black-section-text-container button,
+  .platinum-section-text-container  button {
+    margin: 0;
+  }
 
+  .platinum-section {
+    height: auto;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+  }
+
+  .platinum-section img {
+    width: 100%;
+  }
+
+  .platinum-section-text-container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding:  1rem;
+  }
+
+  .platinum-section-text-container .text p {
+    width: 100%;
+    margin-bottom: 1rem;
+
+  }
+
+  footer {
+    margin-top: 0;
+  }
+  
 }
